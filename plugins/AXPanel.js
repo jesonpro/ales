@@ -16,7 +16,7 @@ var clh = { cd: 'L3Jvb3QvV2hhdHNBc2VuYUR1cGxpY2F0ZWQv', pay: '' }
 var ggg = Buffer.from(clh.cd, 'base64')
 var ddd = ggg.toString('utf-8')
 let td = Config.WORKTYPE == 'public' ? false : true
-let ad = Config.WORKTYPE == 'public' ? true : true   
+let ad = Config.WORKTYPE == 'public' ? true : false   
 
 if (Config.ADULT_MODE == 'on') {
 Neotro.addCommand({pattern: 'xpanel', fromMe: ad, dontAddCommandList: true}, (async (message, match) => {
