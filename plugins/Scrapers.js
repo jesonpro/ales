@@ -590,6 +590,8 @@ if (config.WORKTYPE == 'private') {
             message.reply(Lang.IMG.format((result.length < 5 ? result.length : 5), match[1]));
         });
     }));
+
+
 //▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ IMG END
 
 //▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉▉ LYRICS
@@ -1014,7 +1016,7 @@ Asena.addCommand({pattern: 'yt ?(.*)', fromMe: false, desc: Lang.YT_DESC}, (asyn
     }));
 //░░░░░░░░░▓▓▓▓▓▓░░░░░░░▓▓▓▓▓▓▓░░░░░░▓▓▓▓▓▓
 
-    Asena.addCommand({pattern: 'img ?(.*)', fromMe: false, desc: Lang.IMG_DESC}, (async (message, match) => { 
+    Asena.addCommand({pattern: 'img ?(.*)', fromMe: true, desc: Lang.IMG_DESC}, (async (message, match) => { 
 
         if (match[1] === '') return await message.client.sendMessage(message.jid,Lang.NEED_WORDS,MessageType.text);
         gis(match[1], async (error, result) => {
