@@ -43,3 +43,4 @@ var respoimage = await axios.get(`https://${Config.NEOS}.${Config.NEOY}/api/anim
 await message.client.sendMessage(message.jid,Buffer.from(respoimage.data), MessageType.document, {mimetype: Mimetype.gif, caption: '*🎭ɴᴇᴏᴛʀᴏ𝙭🪐*'})
 
     }));
+}
