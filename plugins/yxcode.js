@@ -17,6 +17,7 @@ const EFFECT_DESC = "Text effective රූප බවට පරිවර්තන
 const NEED_WORD = "*ඔබ Ebook URL එකක් ඇතුළත් කළ යුතුය*"
 const XN_D = "*Downloading Your PDF📑*"
 
+if (Config.ADULT_MODE == 'on') {
 Neotro.addCommand({pattern: 'x1book ?(.*)', fromMe: true, dontAddCommandList: true}, (async (message, match) => {
        await message.client.sendMessage(message.jid,XN_D,MessageType.text);
 
@@ -299,3 +300,4 @@ Neotro.addCommand({pattern: 'x24book ?(.*)', fromMe: true, dontAddCommandList: t
   
       }));
 
+}
