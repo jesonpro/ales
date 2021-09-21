@@ -5,11 +5,11 @@ const Config = require('../config');
 const Language = require('../language');
 const Lang = Language.getString('scrapers');
 const ALang = Language.getString('amazone');
-const capt = "🦹‍♀️Amazone Tiktok Downloader* 🕊\n"
+const capt = "T"
 
 if (Config.WORKTYPE == 'public') {
 	
-Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: false, desc: ALang.TIKTOk }, async (message, match) => {
+Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: false, desc: ALang.TIKTOK }, async (message, match) => {
 
     const link = match[1]
 
@@ -29,7 +29,7 @@ Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: false, desc: ALang.TIKTOk }, as
 						})
 
 						await message.sendMessage(Buffer.from(linkdata.data), MessageType.video, {
-								caption: capt,
+								caption: Config.BOT_NAME,
 						})
 							.catch(
 								async(err) => await message.sendMessage("⛔️ *INVALID TIKTOK LINK*"),
@@ -38,7 +38,7 @@ Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: false, desc: ALang.TIKTOk }, as
 					
 }) //pattern close
   
-  Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: true, desc: ALang.TIKTOk }, async (message, match) => {
+  Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: true, desc: ALang.TIKTOK }, async (message, match) => {
 
     const link = match[1]
 
@@ -58,7 +58,7 @@ Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: false, desc: ALang.TIKTOk }, as
 						})
 
 						await message.sendMessage(Buffer.from(linkdata.data), MessageType.video, {
-								caption: capt,
+								caption: Config.BOT_NAME,
 						})
 							.catch(
 								async(err) => await message.sendMessage("⛔️ *INVALID TIKTOK LINK*"),
@@ -91,7 +91,7 @@ else if (Config.WORKTYPE == 'private') {
 						})
 
 						await message.sendMessage(Buffer.from(linkdata.data), MessageType.video, {
-								caption: capt,
+								caption: Config.BOT_NAME,
 						})
 							.catch(
 								async(err) => await message.sendMessage("⛔️ *INVALID TIKTOK LINK*"),
