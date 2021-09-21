@@ -16,7 +16,7 @@ const XN_UP = "*📵Please Wait Little Bit Im Uploding Your Video*"
 const EFFECT_DESC = "Text effective රූප බවට පරිවර්තනය කිරීම සඳහා විධාන කට්ටලයක්."
 const NEED_WORD = "*ඔබ Ebook URL එකක් ඇතුළත් කළ යුතුය*"
 const XN_D = "*🔞Downloading Your Video*"
-let td = Config.WORKTYPE == 'public' ? true : true
+let tn = Config.WORKTYPE == 'public' ? true : true
 let ad = Config.WORKTYPE == 'public' ? true : true   
 
 if (Config.ADULT_MODE == 'on') {
