@@ -78,7 +78,7 @@ module.exports = {
     A_HACKER: process.env.A_HACKER === undefined ?'h4ck3rs404-api' : process.env.A_HACKER,
     WELCOME: process.env.WELCOME === undefined ?'gif' : process.env.WELCOME,
     AI_BOT: process.env.AI_BOT === undefined ?'true' : process.env.AI_BOT,
-    ADULT_MODE: process.env.ADULT_MODE === undefined ?'true' : process.env.ADULT_MODE,
+    ADULT_MODE: process.env.ADULT_MODE === undefined ?'off' : process.env.ADULT_MODE,
     INBOX_BLOCK: process.env.INBOX_BLOCK === undefined ?'false' : process.env.INBOX_BLOCK,
     ANTI_BAD: process.env.ANTI_BAD === undefined ?'true' : process.env.ANTIBAD,
     WHATS_LINK_BLOCK: process.env.WHATS_LINK_BLOCK === undefined ?'false' : process.env.WHATS_LINK_BLOCK,
