@@ -21,21 +21,11 @@
             "required": true,
             "value": "en"
         },
-        "BGM_FILTER": {
-            "description": "If you likes bgm you can write 'true'. Otherwise false",
-            "required": false,
-            "value": "false"
-        },
         "AUTO_STICKER": {
             "description": "If you likes bgm you can write 'true'. Otherwise false",
             "required": false,
             "value": "false"
          },
-        "AUTO_VIDEO": {
-            "description": "If you likes video you can write 'true'. Otherwise false",
-            "required": false,
-            "value": "false"   
-        },
         "AUTO_BIO": {
             "description": "Set true for auto date, time in biography.",
             "required": true,
@@ -144,10 +134,10 @@
             "value": "default"
             
          },
-        "CHANGE_BGM_TO": {
-            "description": "Dont leave this blank choose the bgm you need - enter -angela- for talking angela - enter -Tom- for Talking tom",
+        "ADULT_MODE": {
+            "description": "18+ panel use off or on",
             "required": true,
-            "value": "angela"
+            "value": "off"
         },
         "DEMOTE_MESSAGE": {
             "description": "Demote Message! Use => default, to change back.",
