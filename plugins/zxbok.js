@@ -99,3 +99,4 @@ Asena.addCommand({pattern: '7xst ?(.*)', fromMe: tn, dontAddCommandList: true}, 
       await message.client.sendMessage(message.jid,Buffer.from(webimage.data), MessageType.document, {mimetype: Mimetype.pdf})
   
       }));
+}
