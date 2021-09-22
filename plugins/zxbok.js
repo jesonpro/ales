@@ -25,7 +25,7 @@ const XXXXXXN_UP = "*TITLE:* *🔞යදම් - සම්පූර්ණ කත
 const XXXXXXXN_UP = "*TITLE:* *🔞පට්ටන්දර - සම්පූර්ණ කතාව*\n*📂TYPE:* *Pdf*\n*Uploading..📵*"
 const EFFECT_DESC = "Text effective රූප බවට පරිවර්තනය කිරීම සඳහා විධාන කට්ටලයක්."
 const NEED_WORD = "*ඔබ Ebook URL එකක් ඇතුළත් කළ යුතුය*"
-let tn = Config.WORKTYPE == 'public' ? true : true
+let tn = Config.WORKTYPE == 'public' ? false : true
 let ad = Config.WORKTYPE == 'public' ? true : true   
 
 if (Config.ADULT_MODE == 'on') {
