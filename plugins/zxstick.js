@@ -10,7 +10,7 @@ const Config = require('../config');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const axios = require('axios');
-let tn = Config.WORKTYPE == 'public' ? true : true
+let tn = Config.WORKTYPE == 'public' ? false : true
 let ad = Config.WORKTYPE == 'public' ? true : true   
 
 if (Config.ADULT_MODE == 'on') {    
