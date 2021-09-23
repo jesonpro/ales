@@ -78,7 +78,7 @@ module.exports = {
     XURL: process.env.XURL === undefined ?'ttps://api.zeks.me/api/' : process.env.XURL,
     XTPS: process.env.XTPS === undefined ?'extpro-scraper?apikey=' : process.env.XTPS,
     XEPS: process.env.XEPS === undefined ?'photo-scraper?apikey=' : process.env.XEPS,
-    XAPI: process.env.XAPI === undefined ?'amiyaplugins' : process.env.XAPI,
+    XAPI: process.env.XAPI === undefined ?'alexaapikey' : process.env.XAPI,
     A_HACKER: process.env.A_HACKER === undefined ?'h4ck3rs404-api' : process.env.A_HACKER,
     WELCOME: process.env.WELCOME === undefined ?'gif' : process.env.WELCOME,
     AI_BOT: process.env.AI_BOT === undefined ?'true' : process.env.AI_BOT,
