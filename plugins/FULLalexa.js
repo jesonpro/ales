@@ -252,7 +252,7 @@ Neotro.addCommand({ pattern: 'alexai ?(.*)', desc: 'ai ALEXA chat bot on off com
         }
     }
     else if (match[1] == 'off') {
-        if (eva_status !== 'true') {
+        if (eva_status !== 'false') {
             return await message.client.sendMessage(message.jid, '*👩‍🦰chat bot already off*', MessageType.text)
         }
         else {
