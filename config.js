@@ -44,7 +44,7 @@ module.exports = {
     NOLOG: process.env.NO_LOG === undefined ? 'false' : process.env.NO_LOG,
     SONGD: process.env.SONGD === undefined ? 'ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.SONGD,
     SONGU: process.env.SONGU === undefined ? 'ᴜᴘʟᴏᴀᴅɪɴɢ ꜱᴏɴɢ' : process.env.SONGU,
-    FULLEVA: process.env.FULL_EVA === undefined ? 'false' : process.env.FULL_EVA,
+    FULLALEXA: process.env.FULL_ALEXA === undefined ? 'false' : process.env.FULL_ALEXA,
     WELCOME_GIF: process.env.WELCOME_GIF === undefined ? 'https://i.imgur.com/nErXUGj.mp4' : process.env.WELCOME_GIF,
     BYE_GIF: process.env.BYE_GIF === undefined ? 'https://i.imgur.com/Z1jCYGN.mp4' : process.env.BYE_GIF,
     BLOCKMSG: process.env.BLOCK_MESSAGE === undefined ? 'default' : process.env.BLOCK_MESSAGE,
