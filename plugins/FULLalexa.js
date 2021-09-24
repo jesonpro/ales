@@ -65,10 +65,9 @@ const convertToWav = file => {
         .save('output.wav')
 }
  
-Neotro.addCommand({on: 'text', fromMe: wk, dontAdCommandList: true, deleteCommand: false}, (async (message, match) => {
-    if (conf.FULLALEXA !== 'true') {        
-        var unique_ident = message.client.user.jid.split('@')[0]      
-      
+Neotro.addCommand({on: 'text', fromMe: false, dontAdCommandList: true, deleteCommand: false}, (async (message, match) => {
+    if (message.message.startsWith('alexa') && conf.FULLALEXA !== 'true') {        
+        var unique_ident = message.client.user.jid.split('@')[0]
         var finm = message.message.replace('', 'Alexa').replace(' ', 'alexa')   
       
         var ldet = lngDetector.detect(finm)
