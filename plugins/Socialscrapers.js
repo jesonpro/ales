@@ -3,12 +3,13 @@ const {MessageType} = require('@adiwajshing/baileys');
 const axios = require('axios');
 const Config = require('../config');
 const Language = require('../language');
-const Lang = Language.getString('amazone');
+const Lang = Language.getString('scrapers');
+const ALang = Language.getString('amazone');
 const capt = "🎭 *NeotroX* 🕊"
 
 if (Config.WORKTYPE == 'public') {
 	
-Asena.addCommand({ pattern: 'pinsta ?(.*)', fromMe: false, desc: Lang.PINSTA}, async (message, match) => {
+Asena.addCommand({ pattern: 'pinsta ?(.*)', fromMe: false, desc: ALang.PINSTA}, async (message, match) => {
 
     const link = match[1]
 
@@ -38,7 +39,7 @@ Asena.addCommand({ pattern: 'pinsta ?(.*)', fromMe: false, desc: Lang.PINSTA}, a
 					
 }) /* pattern close*/
 
-Asena.addCommand({ pattern: 'vinsta ?(.*)', fromMe: false, desc: Lang.VINSTA }, async (message, match) => {
+Asena.addCommand({ pattern: 'vinsta ?(.*)', fromMe: false, desc: ALang.VINSTA }, async (message, match) => {
 
     const link = match[1]
 
@@ -132,7 +133,7 @@ Asena.addCommand({ pattern: 'vinsta ?(.*)', fromMe: true }, async (message, matc
 
 else if (Config.WORKTYPE == 'private') {
 	
-	Asena.addCommand({ pattern: 'pinsta ?(.*)', fromMe: true, desc: Lang.PINSTA }, async (message, match) => {
+	Asena.addCommand({ pattern: 'pinsta ?(.*)', fromMe: true, desc: ALang.PINSTA }, async (message, match) => {
 
     const link = match[1]
 
@@ -162,7 +163,7 @@ else if (Config.WORKTYPE == 'private') {
 					
 }) /* pattern close*/
 
-Asena.addCommand({ pattern: 'vinsta ?(.*)', fromMe: true, desc: Lang.VINSTA }, async (message, match) => {
+Asena.addCommand({ pattern: 'vinsta ?(.*)', fromMe: true, desc: ALang.VINSTA }, async (message, match) => {
 
     const link = match[1]
 
