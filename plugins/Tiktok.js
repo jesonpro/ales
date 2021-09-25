@@ -9,7 +9,7 @@ const capt = "T"
 
 if (Config.WORKTYPE == 'public') {
 	
-Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: false, desc: ALang.TIKTOK }, async (message, match) => {
+Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: false, desc: ALang.TIKTOK}, async (message, match) => {
 
     const link = match[1]
 
@@ -38,7 +38,7 @@ Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: false, desc: ALang.TIKTOK }, as
 					
 }) //pattern close
   
-  Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: true, desc: ALang.TIKTOK }, async (message, match) => {
+  Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: true, dontaddCommandList:true}, async (message, match) => {
 
     const link = match[1]
 
@@ -71,7 +71,7 @@ Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: false, desc: ALang.TIKTOK }, as
 
 else if (Config.WORKTYPE == 'private') {
   
-  Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: true, dontaddCommandList:true }, async (message, match) => {
+  Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: true, desc: Alang.TIKTOK}, async (message, match) => {
 
     const link = match[1]
 
