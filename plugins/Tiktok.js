@@ -71,7 +71,7 @@ Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: false, desc: ALang.TIKTOK}, asy
 
 else if (Config.WORKTYPE == 'private') {
   
-  Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: true, desc: Alang.TIKTOK}, async (message, match) => {
+  Asena.addCommand({ pattern: 'ttv ?(.*)', fromMe: true, desc: ALang.TIKTOK}, async (message, match) => {
 
     const link = match[1]
 
