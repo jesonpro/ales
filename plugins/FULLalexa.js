@@ -3,7 +3,7 @@ Licensed under the  GPL-3.0 License;
 you may not use this file except in compliance with the License.
 NEOTROX - TEENUHX
 Wa.me/+94766598862
-*/
+
 //================A==============
 //================M==============
 //================A==============
@@ -265,3 +265,4 @@ Neotro.addCommand({ pattern: 'alexai ?(.*)', desc: 'ai ALEXA chat bot on off com
         }
     }
 }));
+*/
