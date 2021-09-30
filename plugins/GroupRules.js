@@ -5,7 +5,7 @@ const sql = require('./sql/greetings');
 const Language = require('../language');
 const Lang = Language.getString('greetings');
 const hd = "*◄ ●●● Group Rules ●●●►* \n\n"
-const pw = "👱‍♀️ *🇵🇴🇼🇪🇷🇪🇩 🇧🇾 🇦🇱🇪🇽🇦* "
+const pw = "👱‍♀️ *🇵‌🇴‌🇼‌🇪‌🇷‌🇪‌🇩‌ 🇧‌🇾‌ 🇦‌🇱‌🇪‌🇽‌🇦‌* "
 
 Asena.addCommand({pattern: 'rules', fromMe: true, desc: Lang.RULE_DESC}, (async (message, match) => {
     var rg = await sql.getMessage(message.jid, 'rule');
